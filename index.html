@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailly - Car Detailing at Your Doorstep</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a2a66;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1622015663310-6c69f59b1f7e?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero a {
+      background: #ffcc00;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .hero a:hover {
+      background: #e6b800;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #0a2a66;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .service {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    .service img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service h3 {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+    .about {
+      text-align: center;
+    }
+    .about img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .contact a.whatsapp {
+      background: #25d366;
+      color: #fff;
+    }
+    .contact a.call {
+      background: #0a2a66;
+      color: #fff;
+    }
+    footer {
+      background: #0a2a66;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Detailly</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Your Car, Our Passion</h2>
+    <p>Premium Car Detailing at Your Doorstep in Wayanad</p>
+    <a href="#contact">Book Now</a>
+  </div>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1607860108854-38c023cfdafd?auto=format&fit=crop&w=800&q=80" alt="Basic Wash">
+        <h3>Basic Wash</h3>
+        <p>Quick exterior cleaning with eco-friendly products.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1619026463363-04094f9b89ae?auto=format&fit=crop&w=800&q=80" alt="Interior Detailing">
+        <h3>Interior Detailing</h3>
+        <p>Deep cleaning for seats, dashboard, and carpets.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1607860284854-d9b5d6c56e90?auto=format&fit=crop&w=800&q=80" alt="Premium Package">
+        <h3>Premium Package</h3>
+        <p>Complete car detailing with wax & shine finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a group of passionate car enthusiasts from Wayanad who bring professional car detailing right to your doorstep. At Detailly, we care for your vehicle as much as you do.</p>
+    <img src="https://images.unsplash.com/photo-1607860140378-f3d3a0dacf7d?auto=format&fit=crop&w=1200&q=80" alt="Detailing Team">
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Book your detailing session now. Shine is just one click away!</p>
+    <a href="https://wa.me/919876543210" class="whatsapp">WhatsApp Us</a>
+    <a href="tel:+919876543210" class="call">Call Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Detailly. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
